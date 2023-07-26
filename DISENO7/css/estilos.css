@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.contenedor {
+  max-width: 768px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 5px solid #000;
+  font-family: 'Poppins', sans-serif; }
+
+.alfa {
+  height: 50vh;
+  background-image: url(../recursos/ryan-plomp-76w_eDO1u1E-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: none; }
+  .alfa .movil {
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem; }
+    .alfa .movil .movil-izquierda {
+      flex: 1;
+      padding-left: 20px; }
+    .alfa .movil .movil-derecha {
+      display: flex;
+      gap: 10px; }
+  .alfa .iconos {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem; }
+    .alfa .iconos .iconos-izquierda {
+      flex: 1;
+      font-size: 1.5rem; }
+    .alfa .iconos .iconos-derecha {
+      display: flex;
+      gap: 20px; }
+
+.beta {
+  height: 50vh;
+  background: #b1b0b0;
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .beta .cuadro-blanco {
+    width: 90%;
+    height: 105%;
+    background: #fff;
+    margin-top: -23px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+    position: relative; }
+    .beta .cuadro-blanco .titulo {
+      padding: 25px;
+      font-size: 3rem; }
+    .beta .cuadro-blanco .vendedor {
+      display: flex;
+      flex-direction: row;
+      padding-left: 25px;
+      align-items: center;
+      gap: 15px; }
+      .beta .cuadro-blanco .vendedor .vendedor-foto {
+        background-image: url(../recursos/joseph-sharp-kgR5i_oElDs-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px; }
+      .beta .cuadro-blanco .vendedor .vendedor-datos {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px; }
+        .beta .cuadro-blanco .vendedor .vendedor-datos .vendedor-nombre {
+          font-weight: bold; }
+        .beta .cuadro-blanco .vendedor .vendedor-datos .vendedor-status {
+          color: #aca9a9; }
+      .beta .cuadro-blanco .vendedor .precio {
+        padding-right: 25px;
+        font-size: 1.5rem; }
+    .beta .cuadro-blanco h3 {
+      padding: 25px;
+      font-size: 1.2rem; }
+    .beta .cuadro-blanco .tallas {
+      margin: 0 auto;
+      width: 90%;
+      height: 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      text-align: center;
+      align-items: center;
+      box-sizing: border-box;
+      border: 1px solid #000; }
+      .beta .cuadro-blanco .tallas .talla {
+        border: 1px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        transition: .15s; }
+      .beta .cuadro-blanco .tallas .talla:nth-child(n+2):hover {
+        color: #860486;
+        background: rgba(202, 17, 187, 0.5);
+        cursor: pointer; }
+      .beta .cuadro-blanco .tallas .talla:nth-child(1):hover {
+        color: #c7c5c5;
+        cursor: not-allowed; }
+    .beta .cuadro-blanco .carrito {
+      height: 10px;
+      width: 86%;
+      margin-top: 25px;
+      margin-left: 32px;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f;
+      border-radius: 5px;
+      color: #fff; }
+    .beta .cuadro-blanco .carrito:hover {
+      cursor: pointer; }
+    .beta .cuadro-blanco .bocadillo {
+      position: absolute;
+      border-radius: 50%;
+      padding: 25px;
+      background: #f0f;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+      top: -2rem;
+      left: 37rem; }
+
+/*# sourceMappingURL=estilos.css.map */

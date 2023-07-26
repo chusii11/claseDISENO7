@@ -1,0 +1,164 @@
+@import 'fuentes';
+@import 'reset';
+@import 'variables';
+
+.contenedor {
+    max-width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 5px solid #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.alfa {
+    height: 50vh;
+    background-image: url(../recursos/ryan-plomp-76w_eDO1u1E-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: none;
+    .movil {
+        padding: 20px;
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3rem;
+        .movil-izquierda {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .movil-derecha {
+            display: flex;
+            gap: 10px;
+        }
+    }
+    .iconos {
+        padding: 20px;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        .iconos-izquierda {
+            flex: 1;
+            font-size: 1.5rem;
+        }
+        .iconos-derecha {
+            display: flex;
+            gap: 20px;
+        }
+    }  
+}
+.beta {
+    height: 50vh;
+    background: #b1b0b0;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cuadro-blanco {
+        width: 90%;
+        height: 105%;
+        background: #fff;
+        margin-top: -23px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-sizing: border-box;
+        position: relative;
+        .titulo {
+            padding: 25px;
+            font-size: 3rem;
+        }
+        .vendedor {
+            display: flex;
+            flex-direction: row;
+            padding-left: 25px;
+            align-items: center;
+            gap: 15px;
+            .vendedor-foto {
+                background-image: url(../recursos/joseph-sharp-kgR5i_oElDs-unsplash.jpg);
+                background-size: cover;
+                background-position: center;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+            }
+            .vendedor-datos {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .vendedor-nombre {
+                    font-weight: bold;
+                }
+                .vendedor-status {
+                    color: #aca9a9;
+                }
+            }
+            .precio {
+                padding-right: 25px;
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            padding: 25px;
+            font-size: 1.2rem;
+        }
+        .tallas {
+            margin: 0 auto;
+            width: 90%;
+            height: 120px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            text-align: center;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            .talla {
+                border: 1px solid #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                transition: .15s;
+            }
+            .talla:nth-child(n+2):hover {
+                color: rgb(134, 4, 134);
+                background: rgba($color: #ca11bb, $alpha: 0.5);
+                cursor: pointer;
+            }
+            .talla:nth-child(1):hover {
+                color: #c7c5c5;
+                cursor: not-allowed;
+            }
+        }
+        .carrito {
+            height: 10px;
+            width: 86%;
+            margin-top: 25px;
+            margin-left: 32px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .carrito:hover {
+            cursor: pointer;
+        }
+        .bocadillo {
+            position: absolute;
+            border-radius: 50%;
+            padding: 25px;
+            background: #f0f;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            top: -2rem;
+            left: 37rem;
+        }
+    }
+}
